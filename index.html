@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MP1: Warm Up + API</title>
+
+        <!-- the following says there are javascript source code contained in 
+             the external source files
+        -->
+        <!-- Engine code -->>
+        <script type="text/javascript" src="src/engine/core.js"></script>
+        <script type="text/javascript" src="src/engine/simple_shader.js"></script>
+        <script type="text/javascript" src="src/engine/vertex_buffer.js"></script>
+        <!-- Client game code -->
+        <script type="module" src="src/my_game/my_game.js"></script>
+    </head>
+
+    <body onload="new MyGame('GLCanvas');">
+        <canvas id="GLCanvas" width="640" height="480">
+            <!-- GLCanvas is the area we will draw in: a 640x480 area. -->
+            Your browser does not support the HTML5 canvas.
+            <!-- this message will show only if WebGL clearing failed -->
+        </canvas>
+    </body>
+</html>
